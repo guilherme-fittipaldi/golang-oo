@@ -5,7 +5,6 @@ import(
 	"github.com/guilherme-fittipaldi/golang-oo/contas"
 )
 
-
 func main() {
 
 	contaDaSilvia := contas.ContaCorrente{}
