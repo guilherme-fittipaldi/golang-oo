@@ -2,16 +2,16 @@ package main
 
 import( 
 	"fmt"
-	
+	"github.com/guilherme-fittipaldi/golang-oo/contas"
 )
 
 
 func main() {
 
-	contaDaSilvia := ContaCorrente{}
+	contaDaSilvia := contas.ContaCorrente{}
 	contaDaSilvia.titular = "Silvia"
 	contaDaSilvia.saldo = 300
-	contaDoGustavo := ContaCorrente{titular: "Gustavo", saldo: 100}
+	contaDoGustavo := contas.ContaCorrente{titular: "Gustavo", saldo: 100}
 
 	status := contaDoGustavo.Transferir(-200, &contaDaSilvia)
 	fmt.Println(status)
