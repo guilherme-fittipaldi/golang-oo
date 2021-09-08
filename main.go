@@ -2,15 +2,15 @@ package main
 
 import( 
 	"fmt"
-	"github.com/guilherme-fittipaldi/golang-oo/contas"
+	c "github.com/guilherme-fittipaldi/golang-oo/contas"
 )
 
 func main() {
 
-	contaDaSilvia := contas.ContaCorrente{}
-	contaDaSilvia.titular = "Silvia"
-	contaDaSilvia.saldo = 300
-	contaDoGustavo := contas.ContaCorrente{titular: "Gustavo", saldo: 100}
+	contaDaSilvia := c.ContaCorrente{}
+	contaDaSilvia.Titular = "Silvia"
+	contaDaSilvia.Saldo = 300
+	contaDoGustavo := c.ContaCorrente{Titular: "Gustavo", Saldo: 100}
 
 	status := contaDoGustavo.Transferir(-200, &contaDaSilvia)
 	fmt.Println(status)
@@ -18,7 +18,7 @@ func main() {
 	fmt.Println(contaDoGustavo)
 
 	// contaDoGuilherme := ContaCorrente{titular: "Guilherme",
-	// 	numeroAgencia: 589, numeroConta: 123456, saldo: 125.5}
+	// 	numeroAgencia: 589, numeroConta: 123456, Saldo: 125.5}
 
 	// contaDaBruna := ContaCorrente{"Bruna", 222, 111222, 200}
 	// fmt.Println(contaDoGuilherme)
