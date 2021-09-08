@@ -1,10 +1,10 @@
 package contas
 
 type ContaCorrente struct {
-	titular       string
+	Titular       string
 	numeroAgencia int
 	numeroConta   int
-	saldo         float64
+	Saldo         float64
 }
 
 func (c *ContaCorrente) Sacar(valorDoSaque float64) string {
