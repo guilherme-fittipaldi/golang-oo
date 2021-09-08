@@ -3,7 +3,7 @@ package contas
 import "github.com/guilherme-fittipaldi/golang-oo/clientes"
 
 type ContaCorrente struct {
-	Titular       string
+	Titular       clientes.Titular
 	numeroAgencia int
 	numeroConta   int
 	Saldo         float64
